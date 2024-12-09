@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 11pt;
+    color: white;
+    padding: 20px;
+    line-height: 2.5;
+    background-color: #222;
+    background-image:url(logo1.png) ;
+	background-size:cover ;
+    background-size: 850px;
+	background-position:center top ;
+	background-repeat:no-repeat ;
+}
+
+.container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+ ul li {
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+ul {
+    font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+    background-color: rgba(0,0,0,0.1);
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0px;
+    height: auto;
+    position: fixed;
+   overflow: auto; /* Da bi se omogućilo skrolovanje */
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: gray;
+    color: white;
+    text-align: center;
+}
+#nav {
+    width: 100%;
+    position: fixed;
+}
+
+li {
+    width: 100px;
+    display: inline-block;
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+
+}
+li:hover {
+    opacity: 1;
+}
+
+li:hover > a {
+    border-bottom: 1px solid white;
+}
+li a {
+    line-height: 15px;
+    text-align: center;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    margin: 5px;
+    list-style-type: none;
+    border-radius: 0px;
+}
+
+main {
+    position: fixed;
+    top: 20%;
+    left: 12%;
+    width: 68%;
+    height: 60%;
+    overflow: auto; /* Dodaj overflow ako ima više sadržaja */
+}
+
+aside {
+    position: fixed;
+    top: 20%;
+    left: 80%;
+    width: 18%;
+    height: 60%;
+    overflow: auto; /* Dodaj overflow ako ima više sadržaja */
+}
+/*Web sajt za sve uredjaje*/
+.container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.item {
+	flex: 1 1 200px;
+	margin: 10px;
+}
+
+ @media (max-width: 600px){
+ 	.container {
+ 		flex-direction: column;
+ 	}
+ }
+
+ img {
+ 	max-width: 100px;
+ 	height: auto;
+ }
+
+.message {
+	display: none;
+	color: white;
+	margin-top: 10px;
+}
+
+#myWindow {
+    opacity: 0.9;
+}
+
+.onama {
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.2);
+    line-height: 20px;
+    scrollbar-color: black gray;
+}
+
+@keyframes gabar {
+    0% {transform: rotate(0deg)}
+    49% {transform: rotate(180deg)}
+    99% {transform: rotate(359deg)}
+    100% {transform: rotate(360deg)}
+}
+
